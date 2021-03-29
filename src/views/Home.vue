@@ -24,7 +24,7 @@ export default {
   },
   firestore() {
     return {
-      posts: db.collection('posts').orderBy("createdAt", "asc")
+      posts: db.collection('posts').orderBy("createdAt", "desc")
     }
   }
 }
